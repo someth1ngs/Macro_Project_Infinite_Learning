@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/habit"
+        android:title="@string/habit"
+        android:icon="@drawable/ic_habit"/>
+    <item
+        android:id="@+id/dailies"
+        android:title="@string/dailies"
+        android:icon="@drawable/ic_dailies"/>
+    <item
+        android:id="@+id/task"
+        android:title="@string/task"
+        android:icon="@drawable/ic_task"/>
+    <item
+        android:id="@+id/gamify"
+        android:title="@string/gamify"
+        android:icon="@drawable/ic_gamify"/>
+</menu>
