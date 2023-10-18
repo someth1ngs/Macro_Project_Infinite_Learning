@@ -103,12 +103,12 @@
                 android:textColor="@color/black" />
 
             <Button
+                android:id="@+id/viewAllTask"
                 android:layout_width="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_height="18pt"
                 android:background="@drawable/rounded_but"
                 app:backgroundTint="@null"
-                android:onClick="onButtonClicked"
                 android:textAllCaps="false"
                 android:text="View All Task" />
         </LinearLayout>

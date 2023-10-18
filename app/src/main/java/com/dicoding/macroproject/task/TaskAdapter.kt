@@ -1,16 +1,16 @@
-package com.dicoding.macroproject.task
-
 import android.app.AlertDialog
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.TextView
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.dicoding.macroproject.Home
 import com.dicoding.macroproject.R
+import com.dicoding.macroproject.task.Task
 
 class TaskAdapter(private val context: Context, private val tasks: List<Task>) :
     RecyclerView.Adapter<TaskAdapter.ViewHolder>() {
@@ -51,10 +51,14 @@ class TaskAdapter(private val context: Context, private val tasks: List<Task>) :
                 builder2.setMessage("Apakah Anda ingin Lihat Xp Point?")
 
                 builder2.setPositiveButton("Ya") { dialog2, which2 ->
-                    // Handle peralihan ke aktivitas lain di sini
-                    val intent = Intent(context, Home::class.java)
-                    // Anda dapat menambahkan data tambahan ke intent jika diperlukan
-                    context.startActivity(intent)
+                    // Handle navigasi ke fragment "Home"
+                    val activity = context as FragmentActivity
+                    val fragment = Home() // Ganti Home() dengan fragment yang sesuai
+                    activity.supportFragmentManager.beginTransaction()
+                        .replace(R.id.frame_layout, fragment)
+                        .addToBackStack(null)
+                        .commit()
+
                     dialog2.dismiss() // Tutup dialog konfirmasi kedua
                 }.setNegativeButton("Tidak") { dialog2, which2 ->
                     dialog2.dismiss() // Tutup dialog konfirmasi kedua
@@ -76,4 +80,3 @@ class TaskAdapter(private val context: Context, private val tasks: List<Task>) :
         return tasks.size
     }
 }
-

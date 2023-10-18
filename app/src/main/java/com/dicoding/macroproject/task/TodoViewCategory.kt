@@ -15,9 +15,9 @@ class TodoViewCategory : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todo_view_category)
 
-        val btnDone = findViewById<ImageButton>(R.id.createTas)
+        val btnDon = findViewById<ImageButton>(R.id.createTas)
 
-        btnDone.setOnClickListener {
+        btnDon.setOnClickListener {
             val intent = Intent(this, TodoCreateTask::class.java)
             startActivity(intent)
         }
@@ -25,8 +25,8 @@ class TodoViewCategory : AppCompatActivity() {
         val progress_bar = findViewById<ProgressBar>(R.id.progress_bar)
         val text_view_progress = findViewById<TextView>(R.id.text_view_progress)
 
-        progress_bar.progress = 50
-        text_view_progress.text = "50%"
+        progress_bar.progress = 0
+        text_view_progress.text = "0%"
 
     }
 

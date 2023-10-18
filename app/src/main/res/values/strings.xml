@@ -19,6 +19,19 @@
         <item>School</item>
     </string-array>
 
+    <string-array name="repeat">
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="weekly">
+        <item>1 Weeks</item>
+        <item>2 Weeks</item>
+        <item>3 Weeks</item>
+    </string-array>
+
     <string name="menu">Gamify Menu</string>
     <string name="Shop">Shop</string>
     <string name="Inventory">Inventory</string>
@@ -33,4 +46,16 @@
     <string name="i7">Icon 7</string>
     <string name="i8">Icon 8</string>
     <string name="i9">Icon 9</string>
+
+    <string name="list_habit">List Habit</string>
+    <string name="task_title">Task Title</string>
+    <string name="notes">Notes</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="v_hard">V.Hard</string>
+    <string name="checkpoint">Checkpoint</string>
+    <string name="add_new_checkpoint">Add new Checkpoint</string>
+    <string name="list_is_empty">List is Empty</string>
+    <string name="olahraga">Olahraga</string>
+
+
 </resources>

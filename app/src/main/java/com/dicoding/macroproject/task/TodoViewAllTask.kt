@@ -1,5 +1,6 @@
 package com.dicoding.macroproject.task
 
+import TaskAdapter
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -20,7 +21,6 @@ class TodoViewAllTask : AppCompatActivity() {
 
         val tasks = mutableListOf(
             Task(0, "Belajar Koding", "Belajar Dasar Kotlin dan Java", "10:30 PM", false),
-            Task(2, "Belajar Flutter", "Belajar Dasar Kotlin dan Java", "10:30 PM", false),
 
         )
 

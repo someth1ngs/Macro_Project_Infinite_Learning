@@ -51,6 +51,13 @@
             android:exported="false" />
 
         <activity
+            android:name=".CreateDailies"
+            android:exported="false" />
+
+        <activity android:name=".Home"
+            android:exported="false" />
+
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
