@@ -13,6 +13,18 @@
         android:theme="@style/Theme.MacroProject"
         tools:targetApi="31">
         <activity
+            android:name=".task.TodoViewAllTask"
+            android:exported="false" />
+        <activity
+            android:name=".task.TodoCreateTask"
+            android:exported="false" />
+        <activity
+            android:name=".task.TodoViewCategory"
+            android:exported="false" />
+        <activity
+            android:name=".task.TodoCretaeCategory"
+            android:exported="false" />
+        <activity
             android:name=".Status"
             android:exported="false" />
         <activity
@@ -24,6 +36,20 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".gamify.cari_inventory"
+            android:exported="false" />
+        <activity
+            android:name=".gamify.cari_shop"
+            android:exported="false" />
+        <activity
+            android:name=".gamify.Social"
+            android:exported="false" />
+        <activity
+            android:name=".gamify.Inventory"
+            android:exported="false" />
+
         <activity
             android:name=".SplashScreen"
             android:exported="true">

@@ -1,17 +1,19 @@
 package com.dicoding.macroproject
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.os.TestLooperManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.fragment.app.Fragment
+import com.dicoding.macroproject.gamify.Inventory
+import com.dicoding.macroproject.gamify.Social
 import com.dicoding.macroproject.task.TodoCretaeCategory
 import com.dicoding.macroproject.task.TodoViewAllTask
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -20,10 +22,11 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [Task.newInstance] factory method to
+ * Use the [Gamify.newInstance] factory method to
  * create an instance of this fragment.
  */
-class Task : Fragment() {
+class Gamify : Fragment() {
+    // TODO: Rename and change types of parameters
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -36,25 +39,23 @@ class Task : Fragment() {
         }
     }
 
-
-
-    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        val rootView = inflater.inflate(R.layout.fragment_gamify, container, false)
 
-        val rootView = inflater.inflate(R.layout.fragment_task, container, false)
+        val InvenBtn = rootView.findViewById<TextView>(R.id.inventory)
+        val SocialBtn = rootView.findViewById<TextView>(R.id.social)
 
-        val createCategoryButton = rootView.findViewById<ImageButton>(R.id.createCategory)
-        val viewAllTask = rootView.findViewById<Button>(R.id.viewAllTask)
 
-        createCategoryButton.setOnClickListener {
-            val intent = Intent(context, TodoCretaeCategory::class.java)
+        InvenBtn.setOnClickListener {
+            val intent = Intent(context, Inventory::class.java)
             startActivity(intent)
         }
-        viewAllTask.setOnClickListener {
-            val intent = Intent(context, TodoViewAllTask::class.java)
+
+        SocialBtn.setOnClickListener {
+            val intent = Intent(context, Social::class.java)
             startActivity(intent)
         }
 
@@ -75,17 +76,16 @@ class Task : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Task.
+         * @return A new instance of fragment Habit.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            Task().apply {
+            Gamify().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
     }
-
 }

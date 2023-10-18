@@ -33,8 +33,16 @@ class Habit : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_habit, container, false)
+        val rootView = inflater.inflate(R.layout.fragment_habit, container, false)
+
+        // Mengakses elemen dari main.xml
+        val mainView = requireActivity().findViewById<View>(R.id.main)
+        val fragmentTask = mainView.findViewById<View>(R.id.status)
+
+        // Set visibilitas elemen
+        fragmentTask.visibility = View.VISIBLE
+
+        return rootView
     }
 
     companion object {
