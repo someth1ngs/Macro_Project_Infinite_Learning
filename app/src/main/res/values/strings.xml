@@ -12,6 +12,11 @@
         <item>2 Weeks</item>
         <item>3 Weeks</item>
     </string-array>
+
+    <string-array name="feelings">
+        <item>Person</item>
+        <item>School</item>
+    </string-array>
     <string name="login">Login</string>
     <string name="gamify">Gamify</string>
     <string name="task">Task</string>
@@ -35,4 +40,18 @@
     <string name="add_new_checkpoint">Add new Checkpoint</string>
     <string name="list_is_empty">List is Empty</string>
     <string name="olahraga">Olahraga</string>
+    <string name="menu">Gamify Menu</string>
+    <string name="Shop">Shop</string>
+    <string name="Inventory">Inventory</string>
+    <string name="Social">Social</string>
+    <string name="buy">Buy</string>
+    <string name="i1">Icon 1</string>
+    <string name="i2">Icon 2</string>
+    <string name="i3">Icon 3</string>
+    <string name="i4">Icon 4</string>
+    <string name="i5">Icon 5</string>
+    <string name="i6">Icon 6</string>
+    <string name="i7">Icon 7</string>
+    <string name="i8">Icon 8</string>
+    <string name="i9">Icon 9</string>
 </resources>

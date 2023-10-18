@@ -42,6 +42,9 @@ android {
 }
 
 dependencies {
+
+    implementation("com.github.novatien:SmartColorPicker:1.0.2")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("com.airbnb.android:lottie:6.1.0")
     implementation("com.squareup.picasso:picasso:2.71828")

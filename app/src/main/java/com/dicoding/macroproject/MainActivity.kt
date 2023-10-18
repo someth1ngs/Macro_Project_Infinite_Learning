@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.habit -> replaceFragment(Habit())
                 R.id.dailies -> replaceFragment(Dailies())
                 R.id.task -> replaceFragment(Task())
+                R.id.gamify -> replaceFragment(Gamify())
             }
             true
         }
