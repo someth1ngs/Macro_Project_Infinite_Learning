@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MacroProject"
         tools:targetApi="31">
         <activity
+            android:name=".CreateDailies"
+            android:exported="false" />
+        <activity
             android:name=".Status"
             android:exported="false" />
         <activity

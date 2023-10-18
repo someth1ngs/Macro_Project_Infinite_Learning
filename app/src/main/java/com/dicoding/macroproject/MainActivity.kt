@@ -1,7 +1,10 @@
 package com.dicoding.macroproject
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.AttributeSet
+import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,10 +16,6 @@ import com.dicoding.macroproject.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding
-    private lateinit var myUser : TextView
-    private lateinit var hpBar : ProgressBar
-    private lateinit var level : TextView
-    private lateinit var expBar : ProgressBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,23 +31,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.task -> replaceFragment(Task())
             }
             true
-        }
-
-        myUser = findViewById(R.id.myUser)
-        hpBar = findViewById(R.id.hpBar)
-        level = findViewById(R.id.level)
-        expBar = findViewById(R.id.expBar)
-        val username = intent.getParcelableExtra<User>("User")?.username
-        val health = intent.getParcelableExtra<User>("User")?.health
-        val levels = intent.getParcelableExtra<User>("User")?.level
-        val experience = intent.getParcelableExtra<User>("User")?.exp
-        myUser.text = "$username"
-        if (health != null) {
-            hpBar.progress = health
-        }
-        level.text = "Lvl. $levels"
-        if (experience != null) {
-            expBar.progress = experience
         }
     }
 

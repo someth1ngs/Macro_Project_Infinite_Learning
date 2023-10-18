@@ -7,7 +7,7 @@ import kotlinx.parcelize.Parcelize
 data class User(
     val username:String,
     val password:String,
-    val level: Int = 98,
+    val level: Int = 23,
     val health: Int = 89,
-    val exp: Int = 20
+    val exp: Int = 87
 ): Parcelable

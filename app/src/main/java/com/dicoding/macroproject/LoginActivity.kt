@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
@@ -35,6 +36,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
+        Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show()
         when(v.id) {
             R.id.btn_login -> {
                 val intent = Intent(this@LoginActivity, MainActivity::class.java)

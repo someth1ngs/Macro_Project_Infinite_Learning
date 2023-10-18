@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Macro Project</string>
+    <string-array name="repeat">
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="weekly">
+        <item>1 Weeks</item>
+        <item>2 Weeks</item>
+        <item>3 Weeks</item>
+    </string-array>
     <string name="login">Login</string>
     <string name="gamify">Gamify</string>
     <string name="task">Task</string>
@@ -14,4 +26,13 @@
     <string name="Dailies">ini Fragment untuk Dailies</string>
     <string name="fragment_task">Fragment Task</string>
     <string name="fragment_habit">Fragment Habit</string>
+    <string name="list_habit">List Habit</string>
+    <string name="task_title">Task Title</string>
+    <string name="notes">Notes</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="v_hard">V.Hard</string>
+    <string name="checkpoint">Checkpoint</string>
+    <string name="add_new_checkpoint">Add new Checkpoint</string>
+    <string name="list_is_empty">List is Empty</string>
+    <string name="olahraga">Olahraga</string>
 </resources>
