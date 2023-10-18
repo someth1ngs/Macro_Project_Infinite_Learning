@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Macro Project</string>
+    <string-array name="repeat">
+        <item>Weekly</item>
+        <item>Daily</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="weekly">
+        <item>1 Weeks</item>
+        <item>2 Weeks</item>
+        <item>3 Weeks</item>
+    </string-array>
     <string name="login">Login</string>
     <string name="gamify">Gamify</string>
     <string name="task">Task</string>
